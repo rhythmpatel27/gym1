@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://127.0.0.1:5500/1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Fitness</title>
+<link href="./Rhythm Fitness_files/css" rel="stylesheet"><link rel="stylesheet" href="./Rhythm Fitness_files/style.css"><style>
+    /* CSS reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0PX;
+        padding: 0PX;
+        background: url('img/abs.jpg');
+        color: whitesmoke;
+        size: 100;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 5px;
+        top: 8px;
+        display: inline-block;
+        font-size: 12px;
+    }
+
+    .left img {
+        width: 85px;
+        filter: invert(100);
+    }
+
+    .left div {
+        text-align: center;
+
+        width: fit-content;
+
+
+    }
+
+    .mid {
+        display: block;
+        width: 48%;
+        margin: 20px auto;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 4px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .nabar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        color: whitesmoke;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(139, 136, 136);
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        padding: 5px 14px;
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        /* border: 2px solid gray; */
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(63, 49, 49);
+    }
+
+    .cotainer {
+        border: 2px solid white;
+        margin: 90px 100px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 354px;
+        padding: 1px;
+        /* border: 2px solid red; */
+        margin: 8px auto;
+        font-size: 13px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhai', cursive;
+    }
+
+    .cotainer h1 {
+        text-align: center;
+
+    }
+
+    .cotainer button {
+        display: block;
+        width: 354px;
+        margin: auto;
+        font-size: 13px;
+    }
+</style></head>
+
+
+
+
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div class="left">
+                <img src="./Rhythm Fitness_files/4.jpg" alt="">
+                <div>Rhythm Fitness</div>
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/1.html#" class="active">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/1.html#">About Us</a></li>
+                <li><a href="http://127.0.0.1:5500/1.html#">Fitness Calculator</a></li>
+                <li><a href="http://127.0.0.1:5500/1.html#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="cotainer">
+        <h2>
+            Join the best gym of Surat
+        </h2>
+        <form action="http://127.0.0.1:5500/noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your E-mail id">
+            </div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
